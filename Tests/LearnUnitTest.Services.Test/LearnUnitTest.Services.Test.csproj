@@ -68,8 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\InsertUserTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\LearnUnitTest.Core\LearnUnitTest.Core.csproj">
+      <Project>{2dc8c009-ab84-4b8c-8481-98b957c744b0}</Project>
+      <Name>LearnUnitTest.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Libraries\LearnUnitTest.Services\LearnUnitTest.Services.csproj">
       <Project>{471fe284-77e9-46d6-9dd0-13367b1da0a5}</Project>
       <Name>LearnUnitTest.Services</Name>

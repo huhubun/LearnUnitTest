@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace LearnUnitTest.Core.Data
 {
-    public interface IRepostory<T> where T : BaseEntity
+    public interface IRepository<T> where T : BaseEntity
     {
         T GetById(object id);
 

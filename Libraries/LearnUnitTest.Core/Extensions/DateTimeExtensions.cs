@@ -4,7 +4,7 @@ namespace LearnUnitTest.Core.Extensions
 {
     public static class DateTimeExtensions
     {
-        public static bool In(this DateTime date, DateTime startDate, DateTime endDate)
+        public static bool Between(this DateTime date, DateTime startDate, DateTime endDate)
         {
             if (endDate < startDate)
             {
