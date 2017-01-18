@@ -24,6 +24,11 @@ namespace LearnUnitTest.Services.Users
             return _userRepostory.Table.SingleOrDefault(u => u.Username == username);
         }
 
+        public bool IsUsernameExists(string username)
+        {
+            return GetUserByUsername(username) != null;
+        }
+
         public void InsertUser(User user)
         {
             if (user == null)
