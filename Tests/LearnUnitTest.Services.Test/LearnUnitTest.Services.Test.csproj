@@ -79,6 +79,7 @@
     <Compile Include="Users\GetUserByUsernameTest.cs" />
     <Compile Include="Users\InsertUserTest.cs" />
     <Compile Include="Users\UsernameExistsTest.cs" />
+    <Compile Include="Users\ValidateCustomerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Libraries\LearnUnitTest.Core\LearnUnitTest.Core.csproj">

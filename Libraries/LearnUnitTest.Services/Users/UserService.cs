@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace LearnUnitTest.Services.Users
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private readonly IRepository<User> _userRepostory;
 
