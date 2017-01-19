@@ -78,6 +78,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users\GetUserByUsernameTest.cs" />
     <Compile Include="Users\InsertUserTest.cs" />
+    <Compile Include="Users\UpdateUserTest.cs" />
+    <Compile Include="Users\UserDataSourceFactory.cs" />
     <Compile Include="Users\UsernameExistsTest.cs" />
     <Compile Include="Users\ValidateCustomerTest.cs" />
   </ItemGroup>
