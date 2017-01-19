@@ -31,10 +31,10 @@ namespace LearnUnitTest.Services.Users
 
         public void InsertUser(User user)
         {
-            if (user == null)
-            {
-                throw new ArgumentNullException(nameof(user));
-            }
+            //if (user == null)
+            //{
+            //    throw new ArgumentNullException(nameof(user));
+            //}
 
             _userRepostory.Insert(user);
         }
