@@ -7,11 +7,11 @@ using Xunit;
 
 namespace LearnUnitTest.Services.Test.Users
 {
-    public class ValidateCustomerTest
+    public class ValidateUserTest
     {
         private readonly UserRegistrationService _userRegistrationService;
 
-        public ValidateCustomerTest()
+        public ValidateUserTest()
         {
             var fixture = new Fixture().Customize(new AutoMoqCustomization());
 

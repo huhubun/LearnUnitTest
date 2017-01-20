@@ -81,7 +81,7 @@
     <Compile Include="Users\UpdateUserTest.cs" />
     <Compile Include="Users\UserDataSourceFactory.cs" />
     <Compile Include="Users\UsernameExistsTest.cs" />
-    <Compile Include="Users\ValidateCustomerTest.cs" />
+    <Compile Include="Users\ValidateUserTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Libraries\LearnUnitTest.Core\LearnUnitTest.Core.csproj">
