@@ -52,6 +52,14 @@
       <HintPath>..\..\packages\Autofac.Mvc5.4.0.0\lib\net451\Autofac.Integration.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -190,6 +198,10 @@
     <ProjectReference Include="..\..\Libraries\LearnUnitTest.Core\LearnUnitTest.Core.csproj">
       <Project>{2dc8c009-ab84-4b8c-8481-98b957c744b0}</Project>
       <Name>LearnUnitTest.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\LearnUnitTest.Data\LearnUnitTest.Data.csproj">
+      <Project>{8777dbd3-59fa-4d07-a725-f0e7405693c6}</Project>
+      <Name>LearnUnitTest.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Libraries\LearnUnitTest.Services\LearnUnitTest.Services.csproj">
       <Project>{471fe284-77e9-46d6-9dd0-13367b1da0a5}</Project>

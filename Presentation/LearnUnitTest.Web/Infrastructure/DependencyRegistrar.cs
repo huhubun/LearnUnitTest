@@ -2,6 +2,7 @@
 using Autofac.Integration.Mvc;
 using LearnUnitTest.Core.Data;
 using LearnUnitTest.Core.Domain.Users;
+using LearnUnitTest.Data;
 using LearnUnitTest.Services.Users;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace LearnUnitTest.Web.Infrastructure
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
             //
+            builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
             builder.Register(c =>
             {
                 return new object();
