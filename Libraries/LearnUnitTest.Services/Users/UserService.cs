@@ -48,5 +48,21 @@ namespace LearnUnitTest.Services.Users
 
             _userRepostory.Update(user);
         }
+
+        public UserLoginResults ValidateUser(string username, string password)
+        {
+            var user = GetUserByUsername(username);
+            if (user == null)
+            {
+                return UserLoginResults.NotExist;
+            }
+
+            if (user.Password != password)
+            {
+                return UserLoginResults.WrongPassword;
+            }
+
+            return UserLoginResults.Successful;
+        }
     }
 }

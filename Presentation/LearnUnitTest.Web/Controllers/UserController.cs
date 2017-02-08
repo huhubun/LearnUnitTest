@@ -25,8 +25,12 @@ namespace LearnUnitTest.Web.Controllers
         [HttpPost]
         public ActionResult Login(UserModel model)
         {
+            if (ModelState.IsValid)
+            {
 
-            return View();
+            }
+
+            return View(model);
         }
     }
 }
