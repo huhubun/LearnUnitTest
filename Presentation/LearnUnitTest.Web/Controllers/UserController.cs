@@ -27,7 +27,20 @@ namespace LearnUnitTest.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+                var result = _userService.ValidateUser(model.Username, model.Password);
+                switch (result)
+                {
+                    case UserLoginResults.Successful:
+                        return RedirectToAction("Index", "Home");
 
+                    case UserLoginResults.NotExist:
+                        ModelState.AddModelError("UserName_NotExist", "User not exist");
+                        break;
+
+                    case UserLoginResults.WrongPassword:
+                        ModelState.AddModelError("Password_Wrong", "Wrong password");
+                        break;
+                }
             }
 
             return View(model);

@@ -25,11 +25,15 @@
             <div class="form-group">
                 @Html.LabelFor(m => m.Username)
                 @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Username)
+                @Html.ValidationMessage("UserName_NotExist")
             </div>
 
             <div class="form-group">
                 @Html.LabelFor(m => m.Password)
                 @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Password)
+                @Html.ValidationMessage("Password_Wrong")
             </div>
 
             <div class="text-center">
