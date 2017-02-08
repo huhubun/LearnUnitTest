@@ -1,0 +1,44 @@
+﻿@model LearnUnitTest.Web.Models.Users.UserModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="well col-xs-12 col-md-4 col-md-offset-4">
+        <div class="text-center">
+            <h1>Welcome to LearnUnitTest</h1>
+            <p class="lead text-muted">ASP.NET MVC, xUnit.net, Moq, AutoFixture .. </p>
+        </div>
+
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                @Html.LabelFor(m => m.Username)
+                @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-success" type="submit">Login</button>
+            </div>
+        }
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
